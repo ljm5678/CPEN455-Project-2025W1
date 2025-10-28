@@ -54,6 +54,7 @@ Where:
     ```bash
     git clone git@github.com:DSL-Lab/CPEN455-Project-2025W1-Autograder.git autograder
     ```
+    If you are using windows laptop, you should first run `git clone git@github.com:DSL-Lab/CPEN455-Project-2025W1-Autograder.git` and then rename it to `autograder`.
     - Confirm the released datasets exist under `autograder/cpen455_released_datasets/`
 
 3. Run the provided examples:
