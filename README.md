@@ -3,7 +3,7 @@
 ## Introduction
 In this project, you will explore various techniques to enhance the performance of large language models (LLMs) on a spam detection task. 
 
-Our target is to utilize a pre-trained LLM and apply different strategies, including zero-shot learning, naive prompting, and full fine-tuning, to classify emails as spam or not spam. The main examples we provide are based on bayesian inverse classification methods. But you are encouraged to explore any methods you are interested in.
+Our target is to utilize a pre-trained LLM and apply different strategies, including zero-shot learning, naive prompting, and full fine-tuning, to classify emails as spam or not spam. The main examples we provide are based on Bayesian inverse classification methods. But you are encouraged to explore any methods you are interested in.
 
 ### Examples Provided
 1. **Chatbot Example**: 
@@ -23,7 +23,7 @@ Our target is to utilize a pre-trained LLM and apply different strategies, inclu
     `examples/bayes_inverse_full_finetune.sh` triggers `uv run -m examples.bayes_inverse --method full_finetune` to fine-tune the model before evaluation.
 
 ### Bayesian Inverse Classification
-The bayesian inverse classification method leverages the generative capabilities of LLMs to perform classification tasks. By modeling the joint distribution of inputs and labels, we can compute the posterior probabilities of labels given the inputs, allowing for effective classification.
+The Bayesian inverse classification method leverages the generative capabilities of LLMs to perform classification tasks. By modeling the joint distribution of inputs and labels, we can compute the posterior probabilities of labels given the inputs, allowing for effective classification.
 
 $$
 \begin{aligned}
@@ -46,7 +46,7 @@ Where:
 
 1. Python Environment
    - [Install UV](https://docs.astral.sh/uv/getting-started/installation/#installing-uv).
-   - Install python dependencies with the following command from the project root:
+   - Install Python dependencies with the following command from the project root:
     ```bash
     uv sync
     ```
@@ -131,9 +131,9 @@ File Tree For Important Files:
 
 3. Don't change any code in the `autograder` folder.
 
-    The code in the `autograder` folder is used for grading, and we will use git to clone the original code from github to the `autograder` folder for grading. 
+    The code in the `autograder` folder is used for grading, and we will use the git clone the original code from github to the `autograder` folder for grading. 
 
-    If you change any code in the `autograder` folder in your local device, ***we can't guarantee*** autograder will work properly. And this may lead to a ZERO grade related to accuracy performance.
+    If you change any code in the `autograder` folder, ***we can't guarantee*** autograder will work properly. And this may lead to a ZERO grade related to accuracy performance.
 
 
 ## ⭐️ Grading Breakdown
@@ -186,7 +186,7 @@ File Tree For Important Files:
 #### Explain KV Cache Mechanism (20% of total grade)
 + 5% of total grade for explain what is decoder-only transformers.
 + 5% for explain the KV Cache mechanism in decoder-only transformers, why it is useful and how it works.
-+ 5% for explain what is the draw back of using KV Cache.
++ 5% for explain what is the drawback of using KV Cache.
 + 5% for explain how KV Cache is implemented in our provided codebase.
 
 #### Leaderboard Competition (30% of total grade)
