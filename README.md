@@ -125,13 +125,11 @@ File Tree For Important Files:
 - Run `bash autograder/auto_grader.sh` one last time before zipping so the graders see up-to-date outputs.
 
 ### Submitting to Kaggle competition 
-Follow these steps to prepare the Kaggle submission file and submit it using the Kaggle CLI. We provide an `examples/prep_submission_kaggle.py` helper that turns model probability outputs into the required `ID,SPAM/HAM` CSV.
+Follow these steps to prepare the Kaggle submission file and submit it using the Kaggle CLI. We provide an `examples/prep_submission_kaggle.py` helper that turns model probability outputs into the required `ID,SPAM/HAM` CSV. 
 
-1. Generate probability predictions (writes CSVs into `bayes_inverse_probs/`) if you haven't already:
+1. Make sure that the generated probability predictions live in `bayes_inverse_probs/`. If you haven't already, please rerun the examples. Note, do not run `uv run -m save_prob_example.py` since this will overwrite the probabilities output with an untrained model.
 
-```bash
-uv run -m examples.save_prob_example
-```
+
 
 2. Create the Kaggle submission CSV from the generated probabilities (example file path shown):
 
